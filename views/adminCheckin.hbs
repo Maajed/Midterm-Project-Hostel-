@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/adminCheckin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1dee86f35b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Start Sections -->
+    <div class="sections">
+        <a href="/admin"><i class="fa-solid fa-igloo"></i></a>
+        <a href="/adminCheckin"><i class="fa-solid fa-igloo"></i></a>
+        <a href="/adminCheckout"><i class="fa-solid fa-igloo"></i></a>
+        <a href="/adminMaintenance"><i class="fa-solid fa-igloo"></i></a>
+        <a href="/adminUsers"><i class="fa-solid fa-igloo"></i></a>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                USIU HOSTEL DASHBOARD
+            </div>
+            <div class="user">
+                <div class="name">
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Admin</h5>
+                    <a href="/"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <p>Welcome Back, <span>Admin</span></p>
+            <h2>Check In</h2>
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Semester</th>
+                            <th>Room Number</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>ID Number</th>
+                            <th>Phone Number</th>
+                            <th>Bed</th>
+                            <th>Study Desk</th>
+                            <th>Other</th>
+                            <th>Checkin Date</th>
+                            <th>Key</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                        <!-- Add your table rows dynamically here -->
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+<script src="./js/adminCheckin.js"></script>
+</html>

@@ -1,0 +1,383 @@
+/* Hotel Natoma Reserve */
+@font-face {
+  font-family: 'PTSansCaption';
+  src: url('fonts/PTC55F-webfont.eot');
+  src: local('☺'), url('fonts/PTC55F-webfont.woff') format('woff'), url('fonts/PTC55F-webfont.ttf') format('truetype'), url('fonts/PTC55F-webfont.svg#webfontaMnF3Xb4') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+article, aside, body, dd, div, dl, dt, figcaption, figure, footer, h1, h2, h3, header, li, nav, ol, p, section, table, th, td, ul {
+  margin: 0;
+  padding: 0;
+  }
+article, aside, figure, header, footer, nav {
+  display: block;
+  }
+body {
+  font-family: tahoma, verdana, arial, sans-serif;
+  margin: 0 auto;
+  width: 960px;
+  }
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.1em;
+  width: 100%;
+  margin-bottom: 0.5em;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.6);
+  }
+figure {
+  display: block;
+  float: right;
+  margin: 0 0 0.5em 1em;
+  text-align: center;
+  position: relative;
+  }
+figure img {
+  display: block;
+  margin-bottom: 0.5em;
+  }
+footer {
+  border-top: 0.25em solid #082008;
+  border-left: 0;
+  clear: both;
+  text-align: center;
+  background: #93AD78;
+  -webkit-border-bottom-right-radius: 35px;
+  -moz-border-radius-bottomright: 35px;
+  border-bottom-right-radius: 35px;
+  }
+footer p {
+  padding: 0.5em;
+  }
+h1 {
+  text-align: center;
+  font-family: PTSansCaption, georgia, "times new roman", times, serif;
+  font-weight: normal;
+  background: #082008;
+  color: white;
+  font-size: 2em;
+  -webkit-border-top-left-radius: 35px;
+  -moz-border-radius-topleft: 35px;
+  border-top-left-radius: 35px;
+
+  }
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15px 0;
+  }
+#box {
+  border: 0.25em solid #082008;
+  background: rgba(245, 220, 221, 0.852);
+  position: relative;
+  -webkit-border-top-left-radius: 40px;
+  -webkit-border-bottom-right-radius: 40px;
+  -moz-border-radius-topleft: 40px;
+  -moz-border-radius-bottomright: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  }
+#logo {
+  background: #082008;
+  }
+#logo img {
+  display: block;
+  margin: 0 auto;
+  }
+#mainnav {
+  padding: 0.5em;
+  margin: 0;
+  }
+#mainnav li {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 12px;
+  background: #082008;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  }
+#mainnav li a {
+  text-decoration: none;
+  }
+#skipnav {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  }
+#skipnav  a {
+  text-decoration: none;
+  }
+.center {
+  margin: 0 auto;
+  }
+.center img {
+  display: block;
+  padding: 0 0 2em 0;
+  margin: 0 auto;
+  }
+.right {
+  margin: 0 1em 0 0;
+  float: right;
+  clear: right;
+  }
+.right img {
+  display: block;
+  }
+a:link {
+  color: black;
+  }
+a:visited {
+  color: #082008;
+  }
+a:hover {
+  text-decoration: underline;
+  }
+a:active {
+  color: #082008;
+  }
+#mainnav a:link, #skipnav a:link {
+  color: white;
+  }
+#mainnav a:visited, #skipnav a:visited {
+  color: #ffffcc;
+  }
+#mainnav a:hover, #skipnav a:hover {
+  text-decoration: underline;
+  }
+#mainnav a:active, #skipnav a:active {
+  color: white;
+  }
+
+/* Forms */
+legend, #submit {
+  font-family: PTSansCaption, georgia, "times new roman", times, serif;
+  }
+fieldset {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 2.5em 1em 0.5em 1em;
+  background: white;
+  }
+fieldset fieldset {
+  padding-top: 5px;
+
+  }
+#formfill {
+
+  padding: 10px 5px 7px 5px;
+  margin: 0;
+  }
+input, textarea {
+  font-size: 1em;
+  }
+
+
+legend span {
+  position: absolute;
+  left: 0;
+  font-size: 1.25em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  }
+textarea { 
+  display: block; 
+  }
+#contactinfo label {
+  display: flex;
+  position: relative;
+  margin: 12px 12px;
+  
+  }
+#contactinfo input {
+  position: absolute;
+  left: 50px;
+  }
+#nameinput, #emailinput {
+  width: 20em;
+  }
+
+#idnumber{
+  width: 20em;
+
+}
+#phoneinput {
+  width: 10em;
+  display:flex;
+  }
+#partysize label {
+  margin-right: 20px;
+  width: 3em;
+  }
+#partysize input {
+  width: 3em;
+  }
+#bedpref label {
+  margin: 25px;
+  }
+#checkin {
+  float: left;
+  width: 45%;
+  }
+#checkout {
+  float: right;
+  width: 45%;
+  }
+#parkinginput {
+  width: 3em;
+  }
+  form button[type="submit"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:10px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #FFF;
+    background-color: #242E4c;
+    border: 1px solid #242E4c;
+    transition: .5s;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 400px;
+    
+}
+
+form button[type="submit"]:hover {
+    background-color: #0E121d;
+
+}
+#searchform {
+  position: absolute;
+  right: 10px;
+  top: 80px;
+}
+#searchbox {
+  width: 170px;
+  }
+input:focus, textarea:focus {
+  background: #e3d5ba;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+header {
+    min-height: 80px;
+    display: flex;
+  }
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+header .links {
+    display: flex;
+    align-items: center;
+  }
+
+  header .links li {
+    margin-left: 30px;
+    color: #5d5d5d;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  header .links li:last-child {
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #6c63ff;
+  }
+	
+  header .links li:not(:last-child):hover {
+    color: #6c63ff;
+  }
+
+  .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 140px;
+    min-height: calc(100vh - 80px);
+  }
+
+  .content .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #6c63ff;
+  }
+	
+  .content .image img {
+    max-width: 100%;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    header .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 767px) {
+    header .links li {
+      margin-left: auto;
+    }
+
+  }
+
+  .landing-page header .logo {
+    color: #5d5d5d;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }

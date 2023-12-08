@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css">
+        <script src="https://kit.fontawesome.com/1dee86f35b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="create">
+  <div class="overlay"></div>
+  <div class="account">
+    <h2>Create an account</h2>
+       {{#if msg}}
+      <p class="{{msg_type}}"> {{msg}}</p>
+      {{/if}}
+    <form action="/auth/register" method="post">
+
+    
+      <div class="group">
+          <label>ID Number</label>
+        <i class="fas fa-id-card"></i><input type="text" placeholder="USIU ID Number" name="ID" id="ID">
+  
+      </div>
+        <div class="group">
+        <label>Name</label>
+        <i class="fas fa-user"></i><input type="text" placeholder="Full Name" name="Name" id="Name">
+      </div>
+    
+
+      <div class="group">
+        <label>Your Email</label>
+        <i class="fas fa-envelope"></i><input type="email" placeholder="example@company.com" name="Email" id="Email">
+      </div>
+      <div class="group">
+        <label>Password</label>
+        <i class="fas fa-unlock-alt"></i><input type="password" placeholder="Password" name="Password" id="Password">
+      </div>
+      <div class="group">
+        <label>Confirm Password</label>
+        <i class="fas fa-unlock-alt"></i><input type="password" placeholder="Confirm Password" name="Confirm_Password" id="Confirm_Password">
+      </div>
+       <button type="submit">Register</button>
+      <span class="or">or</span>
+      <p>Already have an account? <a href="/">Login</a></span></p>
+
+    </form>
+  </div>
+</div>
+    
+</body>
+</html>

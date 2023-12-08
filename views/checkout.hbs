@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Check-In</title>
+    <link rel="stylesheet" href="/css/checkin.css">
+    <!--[if lt IE 9]>
+      <script src="scripts/semantic.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <header>
+          <div class="container">
+            <a href="/home" class="logo">USIU Hostels</a>
+            <ul class="links">
+              <li> <a href="/home">Home</a></li>
+              <li><a href="/maintenance">Maintenance Needs</a></li>
+              <li><a href="/checkin">Check-in</a></li>
+              <li><a href="/checkout">Check-out</a></li>
+              <li><a href="/">Logout</a></li>
+            </ul>
+          </div>
+        </header>
+    <div id="box">
+      
+        <h2 id="main">Check-Out</h2>
+                
+        <form id="formfill" action="/auth/checkout" method="post">
+            {{#if msg}}
+      <p class="{{msg_type}}"> {{msg}}</p>
+      {{/if}}
+        
+
+            <fieldset id="checkin">
+              <legend>Semester</legend>
+              <select id="Semester" name="Semester" required>
+                <option value="FS23">FS23</option>
+                <option value="SS24">SS24</option>
+                <option value="SS24">US24</option>
+                <option value="SS24">FS24</option>
+              </select>
+            </fieldset>
+
+            <fieldset id="RoomNumber">
+            <legend>RoomNumber</legend>
+            <input type="number" name="RoomNumber" id="RoomNumber" placeholder="Room No." />
+            </fieldset>
+        
+
+          <fieldset id="contactinfo">
+            <legend><span>Personal Details</span></legend>
+            <label>
+              Name
+              <input type="text" name="Name" id="nameinput" placeholder="First and last name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="Email" id="emailinput" placeholder="address@example.com" />
+            </label>
+            <label>
+              ID No. 
+              <input type="number" name="IDNumber" id="idnumber" placeholder="USIU Id number" />
+            </label>
+
+            <label>
+              Phone
+              <input type="text" name="PhoneNumber" id="phoneinput" placeholder="+254........" />
+            </label>
+          </fieldset>
+          <fieldset id="reservationinfo">
+            <legend><span>Room[tick if you have it, leave blank if not given]</span></legend>
+            <fieldset id="partysize">
+              <legend>Bed</legend>
+                <label for="MattressCover">
+                <input type="checkbox" id="MattressCover" value="MattressCover" name="Bed" />
+                Mattress Cover
+              </label>
+              <label for="Mattress/bed">
+                <input type="checkbox" id="MattressBed" value="MattressBed" name="Bed" />
+                Mattress Bed
+              </label>
+              <label for="BedTrunk">
+                <input type="checkbox" id="BedTrunk" value="BedTrunk" name="Bed" />
+                Bed Trunk
+              </label>
+            </fieldset>
+              <fieldset id="partysize">
+              <legend>Study Desk</legend>
+             <label for="Chair">
+                <input type="checkbox" id="Chair" value="Chair" name="StudyDesk" />
+                Chair
+              </label>
+              <label for="Table">
+                <input type="checkbox" id="Table" value="Table" name="StudyDesk" />
+                Table
+              </label>
+              <label for="StudyLightBulb">
+                <input type="checkbox" id="Study LightBulb" value="Study LightBulb" name="StudyDesk" />
+                Study LightBulb
+              </label>
+              <label for="WastePaper Basket">
+                <input type="checkbox" id="Basket" value="Basket" name="StudyDesk" />
+                WastePaper Basket
+              </label>
+            </fieldset>
+            <fieldset id="partysize">
+              <legend>Other</legend>
+              <label for="">
+                <input type="checkbox" id="Wardrobe" value="Wardrobe" name="Other" />
+                Wardrobe
+              </label>
+              <label for="Mirror">
+                <input type="checkbox" id="Mirror" value="Mirror" name="Other" />
+                Mirror
+              </label>
+
+              <label for="Smoke Detector">
+                <input type="checkbox" id="SmokeDetector" value="SmokeDetector" name="Other" />
+                Smoke Detector
+              </label>
+                <label>
+
+              <label for="TVsocket">
+                <input type="checkbox" id="TVsocket" value="TVsocket" name="Other" />
+                TV Socket
+              </label>
+            </fieldset>
+            
+
+          </fieldset>
+          <fieldset id="additionalinfo">
+            <fieldset id="checkin">
+              <legend>Check-Out date</legend>
+              <label for="checkin-date">Check-Out Date</label>
+              <input type="date" id="checkout-date" name="Checkout_Date" required>
+
+            </fieldset>
+
+            <fieldset id="parking">
+              <legend>Key</legend>
+              <label for="room-selection">Key Returned</label>
+              <select id="room-selection" name="Key_Returned" required>
+                <option value="Returned">Yes</option>
+                <option value="Not Returned">No</option>
+              </select>
+            </fieldset>
+
+          </fieldset>
+          <fieldset id="submitbutton">
+            <button type="submit"> Submit</button>
+          </fieldset>
+        </form>
+      </article>
+    </div>
+  </body>
+</html>
+    

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/maintenance.css">
+</head>
+
+<body>
+    <div id="form-main">
+              <header>
+          <div class="container">
+            <a href="/home" class="logo">USIU Hostels</a>
+            <ul class="links">
+              <li> <a href="/home">Home</a></li>
+              <li><a href="/maintenance">Maintenance Needs</a></li>
+              <li><a href="/checkin">Check-in</a></li>
+              <li><a href="/checkout">Check-out</a></li>
+              <li><a href="/">Logout</a></li>
+            </ul>
+          </div>
+        </header>
+  <div id="form-div">
+    <div class="heading"><h2>Maintenance Needs</h2></div>
+    {{#if msg}}
+      <p class="{{msg_type}}"> {{msg}}</p>
+    {{/if}}
+    <form class="form" id="form1" action="/auth/maintenance" method="post">
+<p class="semester">
+  <select name="Semester" id="Semester">
+  <option value="FS23">FS23</option>
+  <option value="SS24">SS24</option>
+  <option value="US24">US24</option>
+  <option value="FS24">FS24</option>
+</select>
+
+</p>
+
+      <p class="name">
+        <input name="Name" type="text" class="feedback-input" placeholder="Name" id="Name" />
+      </p>
+
+       <p class="roomNo">
+        <input name="RoomNumber" type="number" class="feedback-input" placeholder="Room Number" id="RoomNumber" />
+      </p>
+      
+      
+      <p class="email">
+        <input name="Email" type="text" class="feedback-input" id="Email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="MaintenanceNeeds" class="feedback-input" id="MaintenanceNeeds" placeholder="Type your Maintenance Needs"></textarea>
+      </p>
+      
+      
+     <button type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+    
+</body>
+</html>
